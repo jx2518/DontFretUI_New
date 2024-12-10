@@ -24,6 +24,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    itemNames: false
     itemPrefab: false
     itemsCount: false
   ScriptTypesHidden:
@@ -31,9 +32,12 @@
   DefaultScriptInputs:
     - itemPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       itemsCount: !<float> 10.000000
+      itemNames: !<string[]>
+        []
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input Asset.ObjectPrefab itemPrefab
     - // @input float itemsCount = 10
+    - "// @input string[] itemNames"
