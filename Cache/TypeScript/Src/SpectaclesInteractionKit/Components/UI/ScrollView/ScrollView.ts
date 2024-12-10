@@ -102,6 +102,8 @@ export class ScrollView extends BaseScriptComponent {
       enableScrollLimit: boolean = true;
 
   @input
+      autoScrollSpeed: number = 1.0; // Units per second
+  @input
   @widget(new SliderWidget(0, 1, 0.01))
       _scrollLimit: number = 0.3;
 
@@ -118,6 +120,11 @@ export class ScrollView extends BaseScriptComponent {
       this.mask = this.sceneObject.createComponent('Component.MaskingComponent');
 
       this.defineScriptEvents();
+
+      this.updateEvent.bind(() => {
+        const deltaTime = getDeltaTime();
+        this.scrollProvider.autoScroll(deltaTime, this.autoScrollSpeed);
+      });
   }
 
   private onDestroy() {
