@@ -1,0 +1,101 @@
+- !<AssetImportMetadata/dfe48836-d134-4fbb-ad9c-32e11bfe4e1d>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 7b1d7f23-9f4d-4f74-8512-26405df4f206
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 7b1d7f23-9f4d-4f74-8512-26405df4f206
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> f8a428be-aaec-49f7-a7f0-1ceb11885b55
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/d2f367fd-1122-4e7c-9a7a-5ee5113261e2>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/3ec49509-f512-4857-a660-e49c3030da95>
+  PrefabRemaps:
+    []
+  Name: TextLogger
+  Enabled: true
+  ScriptAsset: !<reference> 8c1fa9fb-bb45-4ef9-a783-069becb83efd
+  ScriptInputsDefault:
+    loggingEnabled: true
+    logLimit: true
+    logTextSize: true
+    customDisplay: true
+    useStudioLog: true
+    spectaclesMode: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      loggingEnabled: true
+      logColor: !<Vec4> {x: 0.630838, y: 0.821698, z: 0.360967, w: 1.000000}
+      logLimit: 20
+      logTextSize: 25
+      customDisplay: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      useStudioLog: true
+      spectaclesMode: false
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/577d274c-a5e3-4daf-a7a0-bd90378afda6>
+  PackagePath: ""
+  objects:
+    - !<own> 5bd2034e-0558-42ab-ba21-29624a317aae
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/5bd2034e-0558-42ab-ba21-29624a317aae>
+  PrefabRemaps:
+    []
+  Name: TextLogger
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> af19b303-e3d8-4c6a-9bd6-4cb840703bc8
+  Components:
+    - !<own> 3ec49509-f512-4857-a660-e49c3030da95
+- !<SceneObject/af19b303-e3d8-4c6a-9bd6-4cb840703bc8>
+  PrefabRemaps:
+    []
+  Name: "Example usage [DELETE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dfe5a78c-3700-42e7-ad7d-0f34ec4b1a96
+- !<ScriptComponent/dfe5a78c-3700-42e7-ad7d-0f34ec4b1a96>
+  PrefabRemaps:
+    []
+  Name: TextLoggerExample
+  Enabled: true
+  ScriptAsset: !<reference> b3b18e51-245c-4879-9f76-dbccfa7584a2
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/f8a428be-aaec-49f7-a7f0-1ceb11885b55>
+  SourceRemaps:
+    - 6399236b-9bdb-4852-b0c9-91b4686ef5d5: dfe5a78c-3700-42e7-ad7d-0f34ec4b1a96
+    - 7b1d7f23-9f4d-4f74-8512-26405df4f206: 577d274c-a5e3-4daf-a7a0-bd90378afda6
+    - a0e047a8-3054-4460-875c-2e3d1d46aa75: 3ec49509-f512-4857-a660-e49c3030da95
+    - a734ea0d-2ab8-4165-8c08-316229867d98: 5bd2034e-0558-42ab-ba21-29624a317aae
+    - f3da06a6-ac84-49d9-84c3-5c1f0ec00032: af19b303-e3d8-4c6a-9bd6-4cb840703bc8
+  SourceState: !<own> 577d274c-a5e3-4daf-a7a0-bd90378afda6
