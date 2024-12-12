@@ -1,5 +1,24 @@
 // @input string question = "What are some ideas for Lenses?"
-// @input SceneObject obj
+// @input SceneObject cone
+// @input Component.Text text 
+
+
+//var sceneObject = script.getSceneObject();
+//var interactionComponent = script.cone.getComponent('InteractionComponent');
+//
+//function onTouchStart(eventArgs) {
+//  print(
+//    '[Tapped on] ' +
+//      sceneObject.name +
+//      ', [Touch position] ' +
+//      eventArgs.position +
+//      ', [Touch Index] ' +
+//      eventArgs.touchId
+//  );
+//}
+//
+//interactionComponent.onTouchStart.add(onTouchStart);
+
 const request = { 
     "temperature": 0,
     "messages": [
@@ -13,23 +32,14 @@ function requestGPT() {
     global.chatGpt.completions(request, (errorStatus, response) => {
         if (!errorStatus && typeof response === 'object') {
             const mainAnswer = response.choices[0].message.content;
-            print(mainAnswer);
+            //print(mainAnswer);
+            script.text.text = mainAnswer; 
         } else {
+            script.text.text = "Error";
             print(JSON.stringify(response));
         }
     })
 }
 
-//script.createEvent("TapEvent").bind(requestGPT);
-// Add TouchComponent to the object
-if (script.obj) {
-    var touchComponent = script.obj.getComponent("Component.TouchComponent") 
-        || script.obj.createComponent("Component.TouchComponent");
-    
-    // Bind the requestGPT function to the object's touch event
-    touchComponent.addMeshVisual(script.obj.getComponent("Component.MeshVisual"));
-    touchComponent.onTouchStart.add(requestGPT);
-}
-
-
+script.createEvent("TapEvent").bind(requestGPT);
 print("Tap to call GPT!");

@@ -43,13 +43,15 @@
   ScriptAsset: !<reference> b36055ed-99d7-4575-bb45-cbd1f2d50769
   ScriptInputsDefault:
     question: true
-    obj: true
+    cone: true
+    text: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       question: "What are some ideas for Lenses?"
-      obj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cone: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      text: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

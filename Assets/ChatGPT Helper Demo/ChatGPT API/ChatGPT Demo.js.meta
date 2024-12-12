@@ -24,13 +24,16 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    obj: false
+    cone: false
     question: false
+    text: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - question: "What are some ideas for Lenses?"
       obj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cone: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      text: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
