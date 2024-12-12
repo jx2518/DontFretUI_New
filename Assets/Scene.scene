@@ -4,12 +4,16 @@
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 5dc2c882-655c-4e06-9e64-e7099c3f7b6e
-    - !<own> a1e5db8a-7db9-48d8-8a9d-9d71fbfdce07
     - !<own> 012ce797-8043-4175-9cd3-518e2b5eeba6
     - !<own> 9645f3da-3fb0-4c61-8327-70f4b10ce0f9
+    - !<own> 2bf260e1-dbec-42c0-8f91-c1a23d7b8df5
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
-      []
+      - |
+        id: 1
+        name: Layer 1
+        color: 0
+
     HasOrtho: true
   RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
@@ -30,6 +34,7 @@
     - !<own> 597f6fa4-23e5-4230-9e74-1ece142cd000
     - !<own> 4e8fc35e-2665-4b35-ac48-45abdfdadff3
     - !<own> fb0d6e4e-d1fa-4762-a72c-cb6f07131dbc
+    - !<own> c3bf11f3-af03-4e1c-869e-ffe28ea67b56
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
     - !<own> e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1
@@ -837,7 +842,7 @@
     - 4c0a858e-b8a4-4b8d-9bb2-5390d2443e3e: aabdab15-e128-4aeb-bcdd-86def7004faa
     - 98fe8415-c1fe-4690-8ba2-b3c8da98c9f5: 91c5a52a-518d-4135-9aae-0e4e9fa82ac7
   Name: ChatGPT Helper
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -856,7 +861,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -2504,6 +2509,18 @@
     - !<own> c486cb11-5634-40e6-a7b3-3fb8d4b483ae
   Components:
     []
+- !<Canvas/07e984f8-7389-460c-96a0-bcd5f4d0ecb8>
+  PrefabRemaps:
+    []
+  Name: Canvas
+  Enabled: true
+  UnitType: World
+  SortingType: Hierarchy
+  WorldSpaceRect:
+    left: -15.000000
+    bottom: -20.000000
+    right: 15.000000
+    top: 20.000000
 - !<SceneObject/081078a7-4af8-41d2-b6a4-cec00f22774e>
   PrefabRemaps:
     []
@@ -6856,6 +6873,12 @@
   Components:
     - !<own> 3467eb3a-eedc-43de-80d3-393de148ecb3
     - !<own> e9549b7c-a276-43df-a92c-32489c7689a4
+- !<MarkerTrackingComponent/2ba0db2e-edbf-421d-8419-980968e008ef>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> b37dfc0e-38f2-4433-be59-bc6869a81b93
 - !<SceneObject/2bae6967-1419-45ff-bcd8-1af21941a55c>
   PrefabRemaps:
     []
@@ -6929,6 +6952,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/2bf260e1-dbec-42c0-8f91-c1a23d7b8df5>
+  PrefabRemaps:
+    []
+  Name: Object
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: -40.000000, y: 15.000000, z: -180.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5a580407-ac43-4017-9bb1-ae2ecdc71edd
+  Components:
+    - !<own> 07e984f8-7389-460c-96a0-bcd5f4d0ecb8
 - !<Text/2c10ed34-341d-44e5-8672-4de5c33a1054>
   PrefabRemaps:
     []
@@ -9397,7 +9435,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -13352,6 +13390,22 @@
     - !<own> 300c1920-0ce5-4767-95ac-d89bbedbe6fa
   Components:
     []
+- !<SceneObject/5a580407-ac43-4017-9bb1-ae2ecdc71edd>
+  PrefabRemaps:
+    []
+  Name: qr_code
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -0.480289}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 30.000000, y: 21.508434, z: 30.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> effb06df-4cf3-46ee-9b76-c7c12fc7d97e
+    - !<own> 9d81fd83-6ae5-4d08-8254-7f666b8e8e77
 - !<SceneObject/5a6cc19f-7616-405a-ab71-ec5b2a2fe944>
   PrefabRemaps:
     []
@@ -13607,7 +13661,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: -200.000000}
+    position: {x: 0.000000, y: 0.000000, z: -300.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -19462,7 +19516,7 @@
 - !<ScriptComponent/94520fb5-2301-43d4-a2ae-01e78eab744c>
   PrefabRemaps:
     []
-  Name: Untitled JavaScript 1
+  Name: display_gpt_text
   Enabled: true
   ScriptAsset: !<reference> 68adba94-64c0-4e66-9b94-d8d431f4e3c7
   ScriptInputsDefault:
@@ -19949,6 +20003,16 @@
     []
   Components:
     - !<own> bb117b75-1e77-4458-b27e-5a062729b3ee
+- !<LookAtComponent/9d81fd83-6ae5-4d08-8254-7f666b8e8e77>
+  PrefabRemaps:
+    []
+  Name: Look At
+  Enabled: true
+  LookAtMode: LookAtPoint
+  AimVectors: ZAimYUp
+  WorldUpVector: SceneY
+  Target: !<reference> 00000000-0000-0065-0000-000000000064
+  OffsetRotation: {x: 0.000000, y: 0.000000, z: 0.000000}
 - !<SceneObject/9dedaa98-754f-4653-bf5f-bec695afd0bd>
   PrefabRemaps:
     []
@@ -20236,9 +20300,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: -20.000000, y: 5.000000, z: -170.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 25.000000, y: 25.000000, z: 25.000000}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> e35a554b-b2c1-428f-b7f2-6e53ddbca28d
@@ -23454,7 +23518,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -24510,6 +24574,21 @@
   Components:
     - !<own> fb67a944-e726-4c9a-a60d-8cd3df6a0924
     - !<own> 15bbca31-0af7-4542-b015-70d824e64422
+- !<SceneObject/c3bf11f3-af03-4e1c-869e-ffe28ea67b56>
+  PrefabRemaps:
+    []
+  Name: qr_tracker
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a1e5db8a-7db9-48d8-8a9d-9d71fbfdce07
+  Components:
+    - !<own> 2ba0db2e-edbf-421d-8419-980968e008ef
 - !<SceneObject/c44ff52d-4e71-43f4-82ef-cc97fde39e0d>
   PrefabRemaps:
     []
@@ -26007,7 +26086,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 724fb229-ba39-4b2c-91bc-2303c480c71c
+    - !<reference> 10611a95-2384-458b-b92b-d5753eed3bab
   Mesh: !<reference> a08d6234-6708-4899-bcf8-70ac164853cf
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -30132,6 +30211,24 @@
     []
   Components:
     - !<own> 06b1c198-d2e6-4352-8323-5f81165af466
+- !<Image/effb06df-4cf3-46ee-9b76-c7c12fc7d97e>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 10611a95-2384-458b-b92b-d5753eed3bab
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<RenderMeshVisual/f06aeab8-8504-4680-858f-1c99d66c3617>
   PrefabRemaps:
     []
@@ -30990,7 +31087,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 25.000000, y: -6.000000, z: -70.000000}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 10.000000, y: 10.000000, z: 10.000000}
     hasSegmentScaleCompensation: false

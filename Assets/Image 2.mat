@@ -1,8 +1,8 @@
-- !<Material/10611a95-2384-458b-b92b-d5753eed3bab>
+- !<Material/879f67cc-56b8-451d-90c9-d2979ba3d1c0>
   PackagePath: ""
   PassesInfo:
-    - !<own> f27db216-cfb9-4c9b-9306-8644e9dedd90
-- !<PassInfo/f27db216-cfb9-4c9b-9306-8644e9dedd90>
+    - !<own> cc3daa91-1912-4a72-9084-aeb39728d5ff
+- !<PassInfo/cc3daa91-1912-4a72-9084-aeb39728d5ff>
   DepthWrite: false
   DepthTest: false
   DepthFunction: LessEqual
@@ -14,12 +14,12 @@
   FrustumCullPad: 0.000000
   InstanceCount: 1
   Defines:
-    - ENABLE_BASE_TEX
     - NODE_13_DROPLIST_ITEM 0
     - NODE_27_DROPLIST_ITEM 0
     - NODE_49_DROPLIST_ITEM 0
     - NODE_69_DROPLIST_ITEM 0
-  BlendMode: Disabled
+    - ENABLE_BASE_TEX
+  BlendMode: PremultipliedAlphaAuto
   Properties:
     Port_Default_N204:
       typeIdx: 1

@@ -34,6 +34,7 @@ function requestGPT() {
             const mainAnswer = response.choices[0].message.content;
             //print(mainAnswer);
             script.text.text = mainAnswer; 
+            global.textLogger.log(mainAnswer); 
         } else {
             script.text.text = "Error";
             print(JSON.stringify(response));
