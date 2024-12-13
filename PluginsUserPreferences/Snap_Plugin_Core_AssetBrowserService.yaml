@@ -2,7 +2,12 @@ ExternalSources:
   type: "std::map<Es::Uuid, Es::Path>"
   value:
     - 33c552a0-79f4-422d-a02c-6484a664d17c: "C:/Users/13590/Downloads/riptide official/riptide official-1.png"
-    - 66207d66-f9a0-4222-8cd2-f423af26d374: /Users/shirleydeng/Downloads/D.wav
+    - 52fd62d9-584a-47a9-bc04-25aa38d3457c: /Users/shirleydeng/Downloads/C.wav
+    - 741bb9f9-7484-4818-be19-1ace331d7bfa: /Users/shirleydeng/Downloads/F.wav
+    - 8404204c-1d6a-4867-8aa0-99d1b5d7a23c: /Users/shirleydeng/Downloads/E.wav
+    - 8ce0325c-01d9-44a4-a881-a308db51c7aa: /Users/shirleydeng/Downloads/A.wav
+    - cd6bb157-48bf-4191-b5fe-83e566188ed1: /Users/shirleydeng/Downloads/D.wav
     - d244583d-8968-441c-b20b-889639d8f1e9: /Users/shirleydeng/Downloads/EmptyScore.jpeg
-    - e40f96b8-af2a-4cb3-bc3b-164cbe269cda: /Users/shirleydeng/Downloads/C.wav
+    - e5ccf52c-7f3c-4183-9710-0b57d677835e: /Users/shirleydeng/Downloads/B.wav
+    - f47ed1b5-c6fc-4c99-bcd9-27a39186796f: /Users/shirleydeng/Downloads/G.wav
   options: 4
