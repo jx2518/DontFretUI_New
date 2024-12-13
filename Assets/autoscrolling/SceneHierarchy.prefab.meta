@@ -1,0 +1,253 @@
+- !<AssetImportMetadata/2e2cf9ec-e28d-4a3f-86d8-8dc4113b3398>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 1e69bdb1-d5c7-4a2a-8266-8ecb2ebe6c5a
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 1e69bdb1-d5c7-4a2a-8266-8ecb2ebe6c5a
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 3787846a-9968-4ed6-9fcf-dc86b9f53260
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/33c28303-ff5f-4edb-80ab-0220cb1beb06>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScreenTransform/04a32038-9428-43cd-931e-56c483b82f2b>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<SceneObject/0bf9740a-66d5-47dd-8414-3e6d9f1fe562>
+  PrefabRemaps:
+    []
+  Name: ScrollViewContent
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 55f4aa4a-c362-454c-9b2a-85b824cf00d6
+    - !<own> 2453d02b-3d1a-40de-8a07-8957d010485f
+- !<ScriptComponent/0cdd87a0-e858-4ffe-af3c-3bde1fd2c44a>
+  PrefabRemaps:
+    []
+  Name: ScrollView
+  Enabled: true
+  ScriptAsset: !<reference> f48a0870-dfc9-4985-8983-187cdf9d6a5a
+  ScriptInputsDefault:
+    _debugDrawEnabled: true
+    enableVerticalScroll: true
+    _enableScrollInertia: true
+    enableScrollLimit: true
+    autoScrollSpeed: true
+    scrollAreaBounds: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _debugDrawEnabled: false
+      enableHorizontalScroll: true
+      enableVerticalScroll: true
+      _enableScrollInertia: true
+      enableScrollLimit: true
+      autoScrollSpeed: !<float> 1.000000
+      _scrollLimit: 0.150000
+      scrollAreaBounds: !<Vec2> {x: 1.000000, y: 1.000000}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/19a1907d-09ea-4a5b-9132-966b000353a9>
+  PrefabRemaps:
+    []
+  Name: ScrollView
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -6.400000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0bf9740a-66d5-47dd-8414-3e6d9f1fe562
+  Components:
+    - !<own> a5255e38-45fd-44e5-9dcd-50ecaf678de4
+    - !<own> 0cdd87a0-e858-4ffe-af3c-3bde1fd2c44a
+- !<Image/2453d02b-3d1a-40de-8a07-8957d010485f>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b41cdd74-8fb9-4803-8927-1043a7f5e7b4
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/3787846a-9968-4ed6-9fcf-dc86b9f53260>
+  SourceRemaps:
+    - 1e69bdb1-d5c7-4a2a-8266-8ecb2ebe6c5a: ef686b92-82a6-476b-878f-f357c11b2404
+    - 2e71ac53-92d4-4d10-b5a3-09f64feb0395: 2453d02b-3d1a-40de-8a07-8957d010485f
+    - 549cbf07-2c5a-4ac4-8d4f-b1ad8cd587fa: 93f42cca-96b0-4140-b542-ed15f628ff68
+    - 7a181dbb-b209-4768-be6e-e21891f324ad: 9ecc5377-2ea3-4bad-9a8a-d2d316845b0b
+    - 881464cf-b4c1-4633-b42b-96c7fb1f3baa: 19a1907d-09ea-4a5b-9132-966b000353a9
+    - 8e1c9d4f-a699-475d-abba-af8fb1d3c53d: a5255e38-45fd-44e5-9dcd-50ecaf678de4
+    - 997b927d-d5bc-4b0f-8c26-6bfd0e0a88ca: c4087119-f4fb-4a02-8944-2ed88ef9184c
+    - adf5a087-0201-4a08-937e-8406a112afa3: 04a32038-9428-43cd-931e-56c483b82f2b
+    - dc35e9cc-556f-4048-a6e6-ec94979ceb61: 0cdd87a0-e858-4ffe-af3c-3bde1fd2c44a
+    - e24346f2-b6aa-486d-bde4-1dc7ddcf40bb: 55f4aa4a-c362-454c-9b2a-85b824cf00d6
+    - f75927c3-c2e9-4ca5-9e9e-9f0ab6705fe8: 0bf9740a-66d5-47dd-8414-3e6d9f1fe562
+  SourceState: !<own> ef686b92-82a6-476b-878f-f357c11b2404
+- !<ScreenTransform/55f4aa4a-c362-454c-9b2a-85b824cf00d6>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: 0.482563
+    bottom: -1.138437
+    right: 3.717049
+    top: 1.393160
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<Canvas/93f42cca-96b0-4140-b542-ed15f628ff68>
+  PrefabRemaps:
+    []
+  Name: Canvas
+  Enabled: true
+  UnitType: World
+  SortingType: Hierarchy
+  WorldSpaceRect:
+    left: -15.000000
+    bottom: -20.000000
+    right: 15.000000
+    top: 20.000000
+- !<SceneObject/9ecc5377-2ea3-4bad-9a8a-d2d316845b0b>
+  PrefabRemaps:
+    []
+  Name: Content
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 19a1907d-09ea-4a5b-9132-966b000353a9
+  Components:
+    - !<own> 04a32038-9428-43cd-931e-56c483b82f2b
+- !<ScreenTransform/a5255e38-45fd-44e5-9dcd-50ecaf678de4>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: -6.400000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: false
+  Anchor:
+    left: -1.000000
+    bottom: -0.320000
+    right: 1.000000
+    top: -0.320000
+  Offset:
+    left: 0.000000
+    bottom: -16.000000
+    right: 0.000000
+    top: 16.000000
+- !<SceneObject/c4087119-f4fb-4a02-8944-2ed88ef9184c>
+  PrefabRemaps:
+    []
+  Name: ScrollViewCanvasExample
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -40.000000, y: 0.000000, z: -60.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9ecc5377-2ea3-4bad-9a8a-d2d316845b0b
+  Components:
+    - !<own> 93f42cca-96b0-4140-b542-ed15f628ff68
+- !<ObjectPrefab/ef686b92-82a6-476b-878f-f357c11b2404>
+  PackagePath: ""
+  objects:
+    - !<own> c4087119-f4fb-4a02-8944-2ed88ef9184c
+  LazyLoading: false
+  RetainAssets: true

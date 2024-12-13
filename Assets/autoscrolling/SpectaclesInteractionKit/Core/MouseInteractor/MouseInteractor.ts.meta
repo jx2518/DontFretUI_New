@@ -1,0 +1,73 @@
+- !<AssetImportMetadata/d453337d-7713-4b75-bd02-40499c5e880b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c92fb05a-2531-40ca-a031-ae35f7052ca1
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c92fb05a-2531-40ca-a031-ae35f7052ca1
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 63366838-90bd-46fb-a39c-2dd8cd44c397
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/12d318df-ebd2-4f09-aed7-fab88b634180>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/63366838-90bd-46fb-a39c-2dd8cd44c397>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    _drawDebug: false
+    _maxRaycastDistance: false
+    indirectDragThreshold: false
+    indirectTargetingVolumeMultiplier: false
+    mouseTargetingMode: false
+    sphereCastEnabled: false
+    spherecastDistanceThresholds: false
+    spherecastRadii: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - _drawDebug: false
+      sphereCastEnabled: false
+      spherecastRadii: !<float[]>
+        - 0.500000
+        - 2.000000
+        - 4.000000
+      spherecastDistanceThresholds: !<float[]>
+        - 0.000000
+        - 12.000000
+        - 30.000000
+      _maxRaycastDistance: !<float> 500.000000
+      indirectTargetingVolumeMultiplier: !<float> 1.000000
+      indirectDragThreshold: !<float> 3.000000
+      mouseTargetingMode: !<float> 2.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"group_start", "label":"Interactor"}'
+    - // @input bool _drawDebug = false
+    - '// @ui {"widget":"group_start", "label":"Spherecast Configuration"}'
+    - // @input bool sphereCastEnabled = false
+    - '// @input number[] spherecastRadii = "{0.5, 2.0, 4.0}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
+    - '// @input number[] spherecastDistanceThresholds = "{0, 12, 30}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Targeting Configuration"}'
+    - // @input float _maxRaycastDistance = 500
+    - // @input float indirectTargetingVolumeMultiplier = 1
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Indirect Drag Provider"}'
+    - // @input float indirectDragThreshold = 3.0
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"MouseInteractor"}'
+    - '// @input float mouseTargetingMode = 2 {"hint":"Sets the return value of MouseInteractor.activeTargetingMode for cases where non-indirect targeting needs to be tested specifically. Useful whenever your code has checks for interactor.activeTargetingMode === TargetingMode.X.", "widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"All", "value":3}, {"label":"Poke", "value":4}]}'
+    - '// @ui {"widget":"group_end"}'

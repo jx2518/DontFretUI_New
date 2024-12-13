@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/e72c314e-d054-403e-bb7d-d901c594593d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 60ae9673-9691-4c8b-8909-48dc47676085
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 60ae9673-9691-4c8b-8909-48dc47676085
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 8123c952-de1b-4bfc-9703-f1f43ac6f8d8
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/3e3abf29-c802-4c30-8522-3e0f02461ed6>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/8123c952-de1b-4bfc-9703-f1f43ac6f8d8>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    _interactor: false
+    enableCursorSnapping: false
+    enableFilter: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - enableCursorSnapping: true
+      enableFilter: false
+      _interactor: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input bool enableCursorSnapping = true
+    - // @input bool enableFilter = false
+    - // @input Component.ScriptComponent _interactor

@@ -16,6 +16,8 @@ function checkUndefined(property, showIfData){
 checkUndefined("itemPrefab", []);
 // @input float itemsCount = 10
 checkUndefined("itemsCount", []);
+// @input string[] itemNames
+checkUndefined("itemNames", []);
 var scriptPrototype = Object.getPrototypeOf(script);
 if (!global.BaseScriptComponent){
    function BaseScriptComponent(){}

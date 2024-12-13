@@ -1,5 +1,5 @@
 ExternalSources:
   type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
   value:
-    []
+    - 33c552a0-79f4-422d-a02c-6484a664d17c: "C:/Users/13590/Downloads/riptide official/riptide official-1.png"
   options: 4

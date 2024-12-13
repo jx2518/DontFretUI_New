@@ -1,0 +1,57 @@
+- !<AssetImportMetadata/993e01a7-5a9b-4797-8ba3-225729837d12>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f48a0870-dfc9-4985-8983-187cdf9d6a5a
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f48a0870-dfc9-4985-8983-187cdf9d6a5a
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 48df27f6-0cf2-4902-af82-cd3fe6e81257
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/5093890f-2978-4ef1-bb31-8c50590c67a2>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/48df27f6-0cf2-4902-af82-cd3fe6e81257>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    _debugDrawEnabled: false
+    _enableScrollInertia: false
+    _scrollLimit: false
+    autoScrollSpeed: false
+    enableHorizontalScroll: false
+    enableScrollLimit: false
+    enableVerticalScroll: false
+    scrollAreaBounds: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - _debugDrawEnabled: false
+      enableHorizontalScroll: false
+      enableVerticalScroll: true
+      _enableScrollInertia: true
+      enableScrollLimit: true
+      _scrollLimit: 0.300000
+      scrollAreaBounds: !<Vec2> {x: 1.000000, y: 1.000000}
+      autoScrollSpeed: !<float> 1.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input bool _debugDrawEnabled = false
+    - // @input bool enableHorizontalScroll = false
+    - // @input bool enableVerticalScroll = true
+    - // @input bool _enableScrollInertia = true
+    - // @input bool enableScrollLimit = true
+    - // @input float autoScrollSpeed = 1.0
+    - '// @input float _scrollLimit = 0.3 {"widget":"slider", "min":0, "max":1, "step":0.01}'
+    - '// @input vec2 scrollAreaBounds = "{1, 1}"'
