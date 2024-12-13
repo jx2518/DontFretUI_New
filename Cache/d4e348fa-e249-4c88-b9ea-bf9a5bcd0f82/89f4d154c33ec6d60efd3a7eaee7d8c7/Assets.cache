@@ -130,7 +130,7 @@
             mDefaultVal: 0.500000
             mValues:
               []
-      ShaderPath: d4e348fa-e249-4c88-b9ea-bf9a5bcd0f82/89f4d154c33ec6d60efd3a7eaee7d8c7/Data/804754a/TipGlowMaterial.glsl
+      ShaderPath: d4e348fa-e249-4c88-b9ea-bf9a5bcd0f82/89f4d154c33ec6d60efd3a7eaee7d8c7/Data/f4eca80/TipGlowMaterial.glsl
       Defines:
         []
       Properties:

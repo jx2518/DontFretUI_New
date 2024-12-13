@@ -1,5 +1,8 @@
 ExternalSources:
-  type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
+  type: "std::map<Es::Uuid, Es::Path>"
   value:
     - 33c552a0-79f4-422d-a02c-6484a664d17c: "C:/Users/13590/Downloads/riptide official/riptide official-1.png"
+    - 66207d66-f9a0-4222-8cd2-f423af26d374: /Users/shirleydeng/Downloads/D.wav
+    - d244583d-8968-441c-b20b-889639d8f1e9: /Users/shirleydeng/Downloads/EmptyScore.jpeg
+    - e40f96b8-af2a-4cb3-bc3b-164cbe269cda: /Users/shirleydeng/Downloads/C.wav
   options: 4

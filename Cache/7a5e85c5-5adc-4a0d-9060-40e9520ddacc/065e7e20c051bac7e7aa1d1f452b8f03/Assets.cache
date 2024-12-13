@@ -105,7 +105,7 @@
             mDefaultVal: 0.500000
             mValues:
               []
-      ShaderPath: 7a5e85c5-5adc-4a0d-9060-40e9520ddacc/065e7e20c051bac7e7aa1d1f452b8f03/Data/804754a/PaintedGlow_Right.glsl
+      ShaderPath: 7a5e85c5-5adc-4a0d-9060-40e9520ddacc/065e7e20c051bac7e7aa1d1f452b8f03/Data/f4eca80/PaintedGlow_Right.glsl
       Defines:
         []
       Properties:

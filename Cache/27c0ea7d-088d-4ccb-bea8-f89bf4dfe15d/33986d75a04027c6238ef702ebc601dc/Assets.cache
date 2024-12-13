@@ -102,7 +102,7 @@
             mDefaultVal: 0.500000
             mValues:
               []
-      ShaderPath: 27c0ea7d-088d-4ccb-bea8-f89bf4dfe15d/33986d75a04027c6238ef702ebc601dc/Data/804754a/ScrollBarSlider.glsl
+      ShaderPath: 27c0ea7d-088d-4ccb-bea8-f89bf4dfe15d/33986d75a04027c6238ef702ebc601dc/Data/f4eca80/ScrollBarSlider.glsl
       Defines:
         []
       Properties:
