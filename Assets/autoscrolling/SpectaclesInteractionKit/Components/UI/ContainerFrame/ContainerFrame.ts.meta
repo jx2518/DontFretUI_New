@@ -51,7 +51,7 @@
     {}
   DefaultScriptInputs:
     - worldCursor: !<MappingBased.CursorController> 00000000-0000-0000-0000-000000000000
-      autoShowHide: true
+      autoShowHide: false
       innerSize: !<Vec2> {x: 32.000000, y: 32.000000}
       border: !<float> 4.000000
       constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}

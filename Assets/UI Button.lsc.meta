@@ -5,11 +5,12 @@
     .hidden/SpritePreset.lsmat|SpritePreset.lsmat|GraphPassInfo: !<reference> 65408678-d85b-4322-b438-feb3475b2efd
     .hidden/SpritePreset1.lsmat: !<reference> ab6f16ca-fae0-4877-9de1-5afd9c739dc1
     .hidden/Textures/Image.png: !<reference> 2d4cae18-b397-4247-b7a2-2a1c5b5ea965
-    0516d4394d9bff5d: !<reference> 90374837-87ec-411a-b58f-7b0660f88571
-    05cf1add5156bb3b: !<reference> ef2595c5-a13c-42fa-8fd9-b15460c40954
-    1f6a32742372cfc1: !<reference> b7091204-22d0-4def-96b5-975eb4a87a5b
-    4e21fc0fecfa4160: !<reference> 39ad19d7-0abf-49d9-8ec4-267ec9d6e2dd
-    7e84ea437deb13e8: !<reference> 8ebe0a2b-3889-4268-a150-ca0be1829ac6
+    1a4a342a9f3ee934: !<reference> 6174d98c-4a2b-44b7-801d-42d1e8ebcc87
+    2480d9d5fd46ec7d: !<reference> 947cdd3d-f5d9-4e85-8c3e-9bb8d3d37caa
+    47e6665242444d87: !<reference> 4adbeb28-e28b-46b3-afba-6671df8340a6
+    78eb44c698a6c45e: !<reference> 1492fa75-867a-4de9-ab17-99bcc19a146a
+    7b0839fcfc5ee6ec: !<reference> 9a7196f0-1439-407f-bafe-0fb9909b3538
+    9359e77ae03801c9: !<reference> 0751ed05-87c2-425c-b1d0-86d9c36f479a
     Default Prefabs/Button Background 2: !<reference> e9499954-6116-41f0-8456-7b124c7646e3
     Default Prefabs/Button Foreground 2: !<reference> a9cd21d6-fd45-431e-9a07-c6be50977370
     Default Prefabs/Button Text 2: !<reference> 8c6db7d6-08f9-49e3-92db-5cc526caa332
@@ -21,10 +22,9 @@
     Modules/UIWidgetsModule_120: !<reference> ca5bc4eb-7ec7-4318-9b22-1855136148f7
     Scripts/UI Button/UI Button: !<reference> 4fb0a585-d197-48d3-9d85-206806d7819c
     Textures/Button_10X 2: !<reference> 3d1f3bdd-ce09-4733-ab3c-d3a3592d3aa1
-    a30a29d52efb1535: !<reference> 8aa51794-b4e0-487e-8b2a-7fc6d7730c69
-    c090e3603ba1cd7b: !<reference> 7bd2b5af-e755-494e-b5f9-9e6e1633a43e
-    ee6e66197fce5a50: !<reference> 4e6304d8-d980-44c2-9f17-2f7b18046a93
-    f380ad10aca9fa74: !<reference> 11c59432-b5c2-4f9a-bfb8-e57ddfd316b9
+    a05356d373cef7f3: !<reference> 5356ed9b-28e8-4bad-88a6-c99478228758
+    a394b91ebf4f2d1e: !<reference> 5c1ee19e-c34b-44e7-9e71-523d903f867e
+    c64c9170f79e0347: !<reference> 77959be1-386f-4a9b-8677-3f595ef7ea62
   ImporterName: LensCoreImporter
   PrimaryAsset: !<reference> 4fb0a585-d197-48d3-9d85-206806d7819c
   PackageType: LegacyPackage
@@ -68,7 +68,7 @@
     Mode: Solid
     Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
     Texture: !<reference> 00000000-0000-0000-0000-000000000000
-    TileCount: 5.000000
+    TileCount: !<float> 5.000000
     TileZone: Rect
     TextureStretch: FitWidth
   Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
@@ -77,7 +77,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      TileCount: 5.000000
+      TileCount: !<float> 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     Size: 0.250000
@@ -87,7 +87,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      TileCount: 5.000000
+      TileCount: !<float> 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     OffsetX: 0.250000
@@ -98,7 +98,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
-      TileCount: 5.000000
+      TileCount: !<float> 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
     Margins:

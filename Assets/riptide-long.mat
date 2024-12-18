@@ -1,10 +1,10 @@
-- !<Material/70ffde9f-236d-41f1-9d0d-412442907d91>
+- !<Material/333dc8bf-f49f-412d-bfb1-93f1f02c8844>
   PackagePath: ""
   PassesInfo:
-    - !<own> 72979037-9fff-4c3c-a97c-ed8b2b75b15c
-- !<PassInfo/72979037-9fff-4c3c-a97c-ed8b2b75b15c>
-  DepthWrite: true
-  DepthTest: true
+    - !<own> e4cc77ab-c27c-457b-828a-90bcfed68dc5
+- !<PassInfo/e4cc77ab-c27c-457b-828a-90bcfed68dc5>
+  DepthWrite: false
+  DepthTest: false
   DepthFunction: LessEqual
   TwoSided: false
   ColorMask: {x: true, y: true, z: true, w: true}
@@ -14,11 +14,11 @@
   FrustumCullPad: 0.000000
   InstanceCount: 1
   Defines:
-    - ENABLE_BASE_TEX
     - NODE_13_DROPLIST_ITEM 0
     - NODE_27_DROPLIST_ITEM 0
     - NODE_49_DROPLIST_ITEM 0
     - NODE_69_DROPLIST_ITEM 0
+    - ENABLE_BASE_TEX
   BlendMode: PremultipliedAlphaAuto
   Properties:
     Port_Default_N204:
@@ -33,7 +33,7 @@
     baseTex:
       typeIdx: 9
       value:
-        id: f4d898cf-6a34-4025-9fec-7e9eef7c3d99
+        id: c2d7d670-c324-43e6-a793-ed3b4915a78b
         sampler:
           filteringMode: Trilinear
           wrapModeU: ClampToEdge
@@ -42,6 +42,4 @@
           borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
           mipmaps: false
         type: Texture2D
-  Pass: !<reference> ff93f1bb-0f0b-4e34-8e24-07af75f33935
-  RTCaster: false
-  RTReceiver: false
+  Pass: !<reference> 73a49de9-1b15-4727-806d-3cd5623c0102

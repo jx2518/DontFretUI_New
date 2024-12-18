@@ -24,12 +24,9 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    button1: false
-    button2: false
-    button3: false
-    scene1: false
-    scene2: false
-    scene3: false
+    scrollViewObject: false
+    toggleOffIcon: false
+    toggleOnIcon: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
@@ -42,6 +39,10 @@
       button1: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
       button2: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
       button3: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
+      scrollViewObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      toggleOnIcon: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      toggleOffIcon: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      touchTarget: !<reference.BaseMeshVisual> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

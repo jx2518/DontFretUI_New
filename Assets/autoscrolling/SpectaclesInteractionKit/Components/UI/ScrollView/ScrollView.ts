@@ -103,6 +103,8 @@ export class ScrollView extends BaseScriptComponent {
   
   @input
       autoScrollSpeed: number = 1.0; // Units per second
+    
+  private isAutoScrolling: boolean = true; // Play/pause state
 
   @input
   @widget(new SliderWidget(0, 1, 0.01))
@@ -123,11 +125,18 @@ export class ScrollView extends BaseScriptComponent {
       this.defineScriptEvents();
         
       this.updateEvent.bind(() => {
+        if (this.isAutoScrolling) {
         const deltaTime = getDeltaTime();
         this.scrollProvider.autoScroll(deltaTime, this.autoScrollSpeed);
+        }
       });
   }
 
+    toggleAutoScroll() {
+        this.isAutoScrolling = !this.isAutoScrolling;
+//        print(`Auto-scroll is now ${this.isAutoScrolling ? 'playing' : 'paused'}`);
+    }    
+    
   private onDestroy() {
       this.scrollArea.destroy();
   }

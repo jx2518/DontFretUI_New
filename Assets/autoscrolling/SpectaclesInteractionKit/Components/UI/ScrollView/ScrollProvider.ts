@@ -95,9 +95,9 @@ export class ScrollProvider {
 
     autoScroll(deltaTime: number, scrollSpeed: number) {
             // Scroll only if there is vertical overflow
-            if (!this.isXOverflow) {
-                return;
-            }
+//            if (!this.isXOverflow) {
+//                return;
+//            }
     
             // Calculate the downward scroll vector
             const scrollVector = new vec2(scrollSpeed * deltaTime, 0);
@@ -105,10 +105,10 @@ export class ScrollProvider {
             // Update the content position
             this.scrollBy(scrollVector);
     
-            // Reset position if the content reaches the bottom
-            if (this.scrollPercentage >= 1) {
-                this.snapToEdges({ x: -1, y: 0, type: 'Content' }); // Snap back to the top
-            }
+//            // Reset position if the content reaches the bottom
+//            if (this.scrollPercentage >= 1) {
+//                this.snapToEdges({ x: -1, y: 0, type: 'Content' }); // Snap back to the top
+//            }
         }
     
     

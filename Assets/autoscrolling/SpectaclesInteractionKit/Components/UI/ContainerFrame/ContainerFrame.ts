@@ -272,7 +272,7 @@ export class ContainerFrame extends BaseScriptComponent {
       this.onHoverExitInnerInteractableEvent.publicApi();
 
   private inputState: InputState = {
-      isHovered: false,
+      isHovered: true,
       rawHovered: false,
       isPinching: false,
       position: vec3.zero(),
