@@ -51,13 +51,13 @@ The application is built using:
 ## Screenshots
 
 Song-playing Mode
-![Song Playing Mode](assets/images/song-playing-mode.png)
+![Song Playing Mode](Assets/images/song-playing-mode.png)
 
 Song Interface
-![Song Interface](assets/images/song-interface.png)
+![Song Interface](Assets/images/song-interface.png)
 
 Ear Training
-![Ear Training](assets/images/ear-training.png)
+![Ear Training](Assets/images/ear-training.png)
 
 ## Acknowledgments
 
